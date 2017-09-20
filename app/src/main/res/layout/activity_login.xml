@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.levisdance.levisdance.Login">
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Correo electrónico" />
+
+    <EditText
+        android:id="@+id/contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/correo"
+        android:layout_below="@+id/correo"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Contraseña" />
+
+    <Button
+        android:id="@+id/registrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/contrasena"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="@color/primary_dark"
+        android:text="Iniciar"
+        android:onClick="iniciarSesion"
+        android:textColor="@color/icons" />
+
+    <TextView
+        android:id="@+id/nuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registrarse"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="29dp"
+        android:text="¿Si no tienes cuenta?" />
+
+    <Button
+        android:id="@+id/Registrateahora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nuevo"
+        android:layout_alignBottom="@+id/nuevo"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/nuevo"
+        android:background="@color/icons"
+        android:text="Registrate Ahora"
+        android:textSize="10sp" />
+
+</RelativeLayout>

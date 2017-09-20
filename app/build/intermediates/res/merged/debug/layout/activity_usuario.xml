@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.levisdance.levisdance.Usuario">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/agregarFoto"
+        android:layout_width="79dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        app:backgroundTint="@color/primary"
+        app:fabSize="normal"
+        app:rippleColor="@color/divider"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <ImageButton
+        android:id="@+id/iraHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/agregarFoto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:backgroundTint="@color/icons"
+        app:srcCompat="@android:drawable/ic_menu_compass" />
+
+    <ImageButton
+        android:id="@+id/iraUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/agregarFoto"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="47dp"
+        android:backgroundTint="@color/icons"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <ImageButton
+        android:id="@+id/configuracion"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/primary"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="@android:dimen/thumbnail_height"
+        app:srcCompat="@android:drawable/ic_menu_report_image"
+        android:layout_below="@+id/configuracion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        tools:textColor="@color/primary_text"
+        android:layout_alignEnd="@+id/descripcion"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_alignStart="@+id/descripcion" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Descripcion"
+        android:textColor="@color/secondary_text"
+        android:layout_below="@+id/Nombre"
+        android:layout_alignEnd="@+id/iraHome" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/agregarFoto"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButton4" />
+
+</RelativeLayout>

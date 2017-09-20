@@ -1,0 +1,131 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:7:22-62
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:8:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:9:22-78
+application
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:11:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\aboni\.android\build-cache\31dd16f2cfef966323fe8a6a391383d5fb5c1329\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\aboni\.android\build-cache\00cafcf9437aca5fc1f814a882d57501f10e17aa\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\aboni\.android\build-cache\1af58f298a3260fa283c984f628c5890a4519ed8\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\aboni\.android\build-cache\aa10d076224c15ed556398a7918c7467e82e3228\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\aboni\.android\build-cache\e7948d42c9480c9dd64a095470a05a0fc56aee93\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\aboni\.android\build-cache\477f0c2a43c2ea0dbdfe2f979f511fd3fc7c7a3d\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\aboni\.android\build-cache\41fa3244dd40c5f53b0aa29cd1eaa692b50d2fcb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\aboni\.android\build-cache\ea192089056e332e28f4518d2fb6a0106882ee02\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\aboni\.android\build-cache\5eaa3906592da2b2576add06ff550e80941b004f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\aboni\.android\build-cache\3e9bebba04211033802376d7fe60a63ebe814ae2\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\aboni\.android\build-cache\f09048ed706c47e86f49e9c8a98fd0f72720f655\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\aboni\.android\build-cache\b01e51fcba1d5790706ede790303913f6727f62d\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:14:9-41
+	android:supportsRtl
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:16:9-35
+	android:roundIcon
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:15:9-54
+	android:allowBackup
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:12:9-35
+	android:icon
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:13:9-43
+	android:theme
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:17:9-40
+activity#com.levisdance.levisdance.Login
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:19:9-24:20
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:19:19-40
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:22:27-74
+activity#com.levisdance.levisdance.Registro
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:25:9-46
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:25:19-43
+activity#com.levisdance.levisdance.Home
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:26:9-42
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:26:19-39
+activity#com.levisdance.levisdance.Usuario
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:27:9-45
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:27:19-42
+activity#com.levisdance.levisdance.CambioContrasena
+ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:28:9-63
+	android:name
+		ADDED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml:28:19-51
+uses-sdk
+INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\aboni\.android\build-cache\31dd16f2cfef966323fe8a6a391383d5fb5c1329\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\aboni\.android\build-cache\00cafcf9437aca5fc1f814a882d57501f10e17aa\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\aboni\.android\build-cache\1af58f298a3260fa283c984f628c5890a4519ed8\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\aboni\.android\build-cache\aa10d076224c15ed556398a7918c7467e82e3228\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\aboni\.android\build-cache\e7948d42c9480c9dd64a095470a05a0fc56aee93\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\aboni\.android\build-cache\1f54696bad61293f9e6c198a678476a74c3565f9\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\aboni\.android\build-cache\477f0c2a43c2ea0dbdfe2f979f511fd3fc7c7a3d\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\aboni\.android\build-cache\41fa3244dd40c5f53b0aa29cd1eaa692b50d2fcb\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\aboni\.android\build-cache\ea192089056e332e28f4518d2fb6a0106882ee02\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\aboni\.android\build-cache\5eaa3906592da2b2576add06ff550e80941b004f\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\aboni\.android\build-cache\3e9bebba04211033802376d7fe60a63ebe814ae2\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\aboni\.android\build-cache\f09048ed706c47e86f49e9c8a98fd0f72720f655\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\aboni\.android\build-cache\b01e51fcba1d5790706ede790303913f6727f62d\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\aboni\.android\build-cache\00cafcf9437aca5fc1f814a882d57501f10e17aa\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\aboni\Desktop\ICESI\APPS\LevisDance 2\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\aboni\.android\build-cache\00cafcf9437aca5fc1f814a882d57501f10e17aa\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\aboni\.android\build-cache\1af58f298a3260fa283c984f628c5890a4519ed8\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\aboni\.android\build-cache\aa10d076224c15ed556398a7918c7467e82e3228\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\aboni\.android\build-cache\e7948d42c9480c9dd64a095470a05a0fc56aee93\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\aboni\.android\build-cache\1f54696bad61293f9e6c198a678476a74c3565f9\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\aboni\.android\build-cache\477f0c2a43c2ea0dbdfe2f979f511fd3fc7c7a3d\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\aboni\.android\build-cache\41fa3244dd40c5f53b0aa29cd1eaa692b50d2fcb\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\aboni\.android\build-cache\ea192089056e332e28f4518d2fb6a0106882ee02\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\aboni\.android\build-cache\5eaa3906592da2b2576add06ff550e80941b004f\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\aboni\.android\build-cache\3e9bebba04211033802376d7fe60a63ebe814ae2\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\aboni\.android\build-cache\f09048ed706c47e86f49e9c8a98fd0f72720f655\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\aboni\.android\build-cache\b01e51fcba1d5790706ede790303913f6727f62d\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\aboni\.android\build-cache\00cafcf9437aca5fc1f814a882d57501f10e17aa\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\aboni\.android\build-cache\00cafcf9437aca5fc1f814a882d57501f10e17aa\output\AndroidManifest.xml:26:9-47

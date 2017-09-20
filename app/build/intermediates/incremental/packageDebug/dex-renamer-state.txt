@@ -1,0 +1,7 @@
+#Tue Sep 19 20:16:15 COT 2017
+base.0=C\:\\Users\\aboni\\Desktop\\ICESI\\APPS\\LevisDance 2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d1e39ea0318402d151f7410e95bd726ef63e73eb
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\aboni\\Desktop\\ICESI\\APPS\\LevisDance 2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_40ed0bfef9931f6abb1c28c3365bc0f2bf12c59b\\classes.dex
+base.1=C\:\\Users\\aboni\\Desktop\\ICESI\\APPS\\LevisDance 2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_40ed0bfef9931f6abb1c28c3365bc0f2bf12c59b
+file.0=C\:\\Users\\aboni\\Desktop\\ICESI\\APPS\\LevisDance 2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d1e39ea0318402d151f7410e95bd726ef63e73eb\\classes.dex
