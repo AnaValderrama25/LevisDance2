@@ -25,7 +25,6 @@ public class Usuario extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(v.getContext(),Home.class);
                 startActivity(intent);
 
