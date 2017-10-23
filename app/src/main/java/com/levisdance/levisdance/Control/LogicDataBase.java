@@ -149,7 +149,7 @@ public class LogicDataBase extends SQLiteOpenHelper {
         if(cursor!=null){
             cursor.moveToFirst();
             ArrayList<Publicacion> publicaciones=new ArrayList<>();
-            while(cursor.moveToNext()){
+            while(cursor.moveToNext() ){
                 Publicacion publicacionRetornada=new Publicacion(
                         cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasPublicacion.PUBLICACION_TITULO)),
                         cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasPublicacion.PUBLICACION_UBICACION)),
