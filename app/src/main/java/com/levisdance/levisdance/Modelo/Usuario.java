@@ -21,7 +21,7 @@ public class Usuario implements Serializable {
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
-        this.contrasena = contrasena;
+        this.contrasena = contrasena ;
         this.fotoPerfil=fotoPerfil;
         publicaciones = new ArrayList<Publicacion>();
     }
