@@ -158,6 +158,7 @@ public class LogicDataBase extends SQLiteOpenHelper {
                 publicaciones.add(publicacionRetornada);
             }
 
+
             db.close();
             cursor.close();
             return publicaciones;
