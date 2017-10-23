@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\aboni\\Desktop\\ICESI\\APPS\\LevisDance 2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+        "outputFile": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 207
                 },
                 "from": {
-                    "file": "C:\\Users\\aboni\\.android\\build-cache\\1af58f298a3260fa283c984f628c5890a4519ed8\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 342
                 },
                 "from": {
-                    "file": "C:\\Users\\aboni\\.android\\build-cache\\1af58f298a3260fa283c984f628c5890a4519ed8\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 411
                 },
                 "from": {
-                    "file": "C:\\Users\\aboni\\.android\\build-cache\\1af58f298a3260fa283c984f628c5890a4519ed8\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 475
                 },
                 "from": {
-                    "file": "C:\\Users\\aboni\\.android\\build-cache\\1af58f298a3260fa283c984f628c5890a4519ed8\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 544
                 },
                 "from": {
-                    "file": "C:\\Users\\aboni\\.android\\build-cache\\1af58f298a3260fa283c984f628c5890a4519ed8\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 614
                 },
                 "from": {
-                    "file": "C:\\Users\\aboni\\.android\\build-cache\\1af58f298a3260fa283c984f628c5890a4519ed8\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

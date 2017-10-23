@@ -9,7 +9,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.levisdance.levisdance.Modelo.Usuario;
 import com.levisdance.levisdance.Modelo.Publicacion;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Created by aboni on 12/09/2017.
@@ -109,7 +111,7 @@ public class LogicDataBase extends SQLiteOpenHelper {
 
             ContentValues valores=new ContentValues();
             valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_TITULO,publicacion.getTitulo());
-            valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_FECHA, publicacion.getFecha());
+            valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_FECHA, publicacion.getFecha().toString());
             valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_UBICACION,publicacion.getUbicacion());
             valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_FOTO, publicacion.getFoto());
             valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_USUARIO, usuario.getCorreo());
@@ -122,7 +124,7 @@ public class LogicDataBase extends SQLiteOpenHelper {
         SQLiteDatabase db=getWritableDatabase();
         ContentValues valores=new ContentValues();
         valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_TITULO,publicacion.getTitulo());
-        valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_FECHA, publicacion.getFecha());
+        valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_FECHA, publicacion.getFecha().toString());
         valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_UBICACION,publicacion.getUbicacion());
         valores.put(DataBase.DatosColumnasPublicacion.PUBLICACION_FOTO, publicacion.getFoto());
         db.update(DataBase.TABLA_PUBLICACIONES, valores, DataBase.DatosColumnasPublicacion.PUBLICACION_TITULO+"="+publicacion.getTitulo(),null);
@@ -151,7 +153,7 @@ public class LogicDataBase extends SQLiteOpenHelper {
                 Publicacion publicacionRetornada=new Publicacion(
                         cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasPublicacion.PUBLICACION_TITULO)),
                         cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasPublicacion.PUBLICACION_UBICACION)),
-                        cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasPublicacion.PUBLICACION_FECHA)),
+                        cursor.getString(new SimpleDateFormat(cursor.getColumnIndex(DataBase.DatosColumnasPublicacion.PUBLICACION_FECHA))),
                         cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasPublicacion.PUBLICACION_FOTO)));
                 publicaciones.add(publicacionRetornada);
             }

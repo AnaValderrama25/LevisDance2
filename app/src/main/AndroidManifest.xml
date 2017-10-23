@@ -15,18 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login">
+        <activity android:name=".Vista.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registro" />
-        <activity android:name=".Home" />
-        <activity android:name=".Usuario" />
-        <activity android:name=".CambioContrasena" />
-        <activity android:name=".activity_publicar"></activity>
+        <activity android:name=".Vista.Registro" />
+        <activity android:name=".Vista.Home" />
+        <activity android:name=".Vista.Usuario" />
+        <activity android:name=".Vista.CambioContrasena" />
+        <activity android:name=".Vista.activity_publicar"></activity>
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.levisdance.levisdance.activity_publicar">
+    tools:context="com.levisdance.levisdance.Vista.activity_publicar">
 
     <Button
         android:id="@+id/btn_subir_img"
@@ -74,7 +74,7 @@
         android:id="@+id/titulo"
         android:layout_width="354dp"
         android:layout_height="49dp"
-        android:hint="Escriba el tititulo"
+        android:hint="Escriba el titulo"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
@@ -106,11 +106,8 @@
         android:id="@+id/toolbar4"
         android:layout_width="368dp"
         android:layout_height="65dp"
-        android:background="@drawable/toolbar"
         android:elevation="4dp"
         android:minHeight="0dp"
-
-
         android:theme="?attr/actionBarTheme"
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="8dp" />
