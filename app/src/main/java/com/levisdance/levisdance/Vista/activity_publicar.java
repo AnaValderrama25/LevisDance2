@@ -1,33 +1,28 @@
 package com.levisdance.levisdance.Vista;
 
         import android.content.Intent;
-        import android.icu.text.DateFormat;
-        import android.icu.text.SimpleDateFormat;
-        import android.net.Uri;
-        import android.os.Build;
-        import android.support.annotation.NonNull;
-        import android.support.annotation.RequiresApi;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.util.Log;
-        import android.view.View;
-        import android.widget.EditText;
-        import android.widget.Toast;
+import android.icu.text.SimpleDateFormat;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
-        import com.google.android.gms.tasks.OnFailureListener;
-        import com.google.android.gms.tasks.OnSuccessListener;
-        import com.google.firebase.database.DataSnapshot;
-        import com.google.firebase.storage.FirebaseStorage;
-        import com.google.firebase.storage.StorageReference;
-        import com.google.firebase.storage.UploadTask;
-        import com.levisdance.levisdance.Control.LogicDataBase;
-        import com.levisdance.levisdance.Modelo.*;
-        import com.levisdance.levisdance.Modelo.Publicacion;
-        import com.levisdance.levisdance.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+import com.levisdance.levisdance.Control.LogicDataBase;
+import com.levisdance.levisdance.Modelo.Publicacion;
+import com.levisdance.levisdance.R;
 
-        import java.io.File;
-        import java.net.DatagramPacket;
-        import java.util.Date;
+import java.util.Date;
 
 public class activity_publicar extends AppCompatActivity {
 
@@ -89,9 +84,9 @@ public class activity_publicar extends AppCompatActivity {
     public void UploadFile(Uri uriimage){
         Uri file = uriimage;
 
-        StorageReference riversRef = mStorageRef.child("images");
+        StorageReference imagen = mStorageRef.child("images");
 
-        riversRef.putFile(file)
+        imagen.putFile(file)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
