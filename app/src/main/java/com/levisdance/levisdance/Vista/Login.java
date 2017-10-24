@@ -14,13 +14,17 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.levisdance.levisdance.Control.LogicDataBase;
+import com.levisdance.levisdance.Modelo.*;
+import com.levisdance.levisdance.Modelo.Usuario;
 import com.levisdance.levisdance.R;
 
 public class Login extends AppCompatActivity {
 
     //Firebase Auth State
     private FirebaseAuth mAuth;
+
 
     private com.levisdance.levisdance.Modelo.Usuario usuario;
 
@@ -62,36 +66,43 @@ public class Login extends AppCompatActivity {
         EditText contrasena= (EditText) findViewById(R.id.contrasena);
         String password= contrasena.getText().toString();
 
-        if(!correo.getText().toString().equals("")){
+        if(!correo.getText().toString().equals("")||!correo.getText().toString().equals(" ")){
 
             try {
                 //usuario=dataBase.buscarUsuario(correo.getText().toString());
-                mAuth.createUserWithEmailAndPassword(correo.toString(), password)
-                        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                //Que pasa si login correcto
+                if(!password.equals("")||!password.equals(" ")){
+                    final Intent intent= new Intent(this, Home.class);
+                    mAuth.signInWithEmailAndPassword(correo.toString(), password)
+                            .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                   //Aquí se debe hacer que pasa si el login es correcto
+                                    // If sign in fails, display a message to the user. If sign in succeeds
+                                    // the auth state listener will be notified and logic to handle the
+                                    // signed in user can be handled in the listener.
+                                    if (task.isSuccessful()) {
+                                        FirebaseUser user= task.getResult().getUser();
+                                        String email= user.getEmail();
+                                        String name = user.getDisplayName();
+                                        String ph = user.getPhotoUrl().toString();
 
-                                // If sign in fails, display a message to the user. If sign in succeeds
-                                // the auth state listener will be notified and logic to handle the
-                                // signed in user can be handled in the listener.
-                                if (!task.isSuccessful()) {
-                                    Toast.makeText(Login.this,"La autenticazión falló", Toast.LENGTH_SHORT).show();
+                                        usuario= new Usuario(name,email, ph);
+                                        startActivity(intent);
+                                    }else{
+                                        Toast.makeText(Login.this,"No se pudo realizar la autenticación",
+                                                Toast.LENGTH_SHORT).show();
+                                    }
+
+                                    // ...
                                 }
-
-                                // ...
-                            }
-                        });
+                            });
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show();
+                    contrasena.setText("");
+                }
             } catch (Exception e) {
                 e.printStackTrace();
-            }
-            if(usuario.getContrasena().equals(contrasena)){
-                Intent intent= new Intent(this, Home.class);
-                intent.putExtra(EXTRA_MESSAGE,correo.getText().toString());
-                startActivity(intent);
-            }else{
-                Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show();
-                contrasena.setText("");
             }
         }else{
             Toast.makeText(this, "El correo no puede estar vacío", Toast.LENGTH_SHORT).show();

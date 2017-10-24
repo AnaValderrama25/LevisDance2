@@ -13,13 +13,20 @@ ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidM
 	android:versionCode
 		INJECTED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:5:5-79
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\User\.android\build-cache\c4da21833ffb8770da94d4d83791ac5d5332b0cb\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\User\.android\build-cache\bc34baf77fb53c74ae935ee4d3e393fd26f5edee\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\User\.android\build-cache\188a286f2443bce8dd26bf67924377b40d82b77c\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:5:79-141
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\User\.android\build-cache\c4da21833ffb8770da94d4d83791ac5d5332b0cb\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\User\.android\build-cache\bc34baf77fb53c74ae935ee4d3e393fd26f5edee\output\AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\User\.android\build-cache\188a286f2443bce8dd26bf67924377b40d82b77c\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:5:96-138
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
@@ -164,12 +171,6 @@ ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\User\.and
 		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\User\.android\build-cache\e6d3cbfa1cd8ea9584f2842a201207611a2be769\output\AndroidManifest.xml:19:86-145
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\User\.android\build-cache\e6d3cbfa1cd8ea9584f2842a201207611a2be769\output\AndroidManifest.xml:19:19-85
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\User\.android\build-cache\c4da21833ffb8770da94d4d83791ac5d5332b0cb\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\User\.android\build-cache\bc34baf77fb53c74ae935ee4d3e393fd26f5edee\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\User\.android\build-cache\188a286f2443bce8dd26bf67924377b40d82b77c\output\AndroidManifest.xml:19:5-78
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\User\.android\build-cache\c4da21833ffb8770da94d4d83791ac5d5332b0cb\output\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\User\.android\build-cache\c4da21833ffb8770da94d4d83791ac5d5332b0cb\output\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\User\.android\build-cache\bc34baf77fb53c74ae935ee4d3e393fd26f5edee\output\AndroidManifest.xml:22:5-67

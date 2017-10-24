@@ -4,12 +4,12 @@
         "source": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\color\\abc_tint_spinner.xml"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "C:\\Users\\User\\.android\\build-cache\\f7a498530319dc5dd5812b78df4486a1618cae06\\output\\res\\color\\design_error.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
         "source": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\f7a498530319dc5dd5812b78df4486a1618cae06\\output\\res\\color\\design_error.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",

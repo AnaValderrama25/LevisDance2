@@ -11,17 +11,17 @@ public class Usuario implements Serializable {
 
     //Atributos
     private String nombre;
-    private String apellido;
+    //private String apellido;
     private String correo;
-    private String contrasena;
+    //private String contrasena;
     private String fotoPerfil;
     private ArrayList<Publicacion> publicaciones;
 
-    public Usuario(String nombre, String apellido, String correo, String contrasena, String fotoPerfil) {
+    public Usuario(String nombre, String correo, String fotoPerfil) {
         this.nombre = nombre;
-        this.apellido = apellido;
+        //this.apellido = apellido;
         this.correo = correo;
-        this.contrasena = contrasena;
+        //this.contrasena = contrasena;
         this.fotoPerfil=fotoPerfil;
         publicaciones = new ArrayList<Publicacion>();
     }
@@ -40,22 +40,6 @@ public class Usuario implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public String getContrasena() {
-        return contrasena;
-    }
-
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
     }
 
     public String getCorreo() {

@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "861675855821-q989q5t80u7129m637c1bhcq518njuuc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levisdance.levisdance",
+            "certificate_hash": "6cbe0ea4594b2ef30998990a279621704ec45acd"
+          }
+        },
+        {
+          "client_id": "861675855821-636ljt56s0n2uf9hd1nskmu4s51rlh9v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levisdance.levisdance",
+            "certificate_hash": "36e0a033d5f2bb42aa176194facf2c1f3ad56fc3"
+          }
+        },
+        {
           "client_id": "861675855821-iehe960j2nqba1o6s371s7fjrbbo0kdn.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +45,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861675855821-iehe960j2nqba1o6s371s7fjrbbo0kdn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
