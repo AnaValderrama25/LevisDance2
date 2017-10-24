@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "861675855821",
+    "firebase_url": "https://levisdance-4c4d1.firebaseio.com",
+    "project_id": "levisdance-4c4d1",
+    "storage_bucket": "levisdance-4c4d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861675855821:android:1482ce218c0bd15a",
+        "android_client_info": {
+          "package_name": "com.levisdance.levisdance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861675855821-iehe960j2nqba1o6s371s7fjrbbo0kdn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_dc0vLtgxNxDK96EhL2nGifXbbttrXXQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

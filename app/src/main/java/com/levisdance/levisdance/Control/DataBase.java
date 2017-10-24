@@ -23,7 +23,7 @@ public class DataBase {
 
     public static final String SQL_CREATE_TABLE_PUBLICACIONES= "CREATE TABLE "
             +DataBase.TABLA_PUBLICACIONES+ " ("
-            + DatosColumnasPublicacion.PUBLICACION_TITULO+ " TEXT,"
+            + DatosColumnasPublicacion.PUBLICACION_TITULO+ " TEXT PRIMARY KEY,"
             + DatosColumnasPublicacion.PUBLICACION_FECHA+ " DATE,"
             + DatosColumnasPublicacion.PUBLICACION_UBICACION+ " TEXT,"
             + DatosColumnasPublicacion.PUBLICACION_FOTO+ " TEXT,"
