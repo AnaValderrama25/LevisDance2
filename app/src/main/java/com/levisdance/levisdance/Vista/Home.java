@@ -180,6 +180,7 @@ realtime();
                             public void onFailure(@NonNull Exception exception) {
                                 // Handle unsuccessful uploads
                                 // ...
+                                Log.d("Error", "Que vaina");
                             }
                         });}
         }catch (Exception e){
