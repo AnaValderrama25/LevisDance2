@@ -7,6 +7,17 @@
     android:background="@android:color/background_light"
     tools:context="com.levisdance.levisdance.Vista.Login">
 
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registrarse"
+        android:backgroundTint="@color/primary_dark"
+        android:onClick="iniciarSesionConFacebook"
+        android:text="Iniciar sesión con Facebook"
+        android:textColor="@color/icons" />
+
     <EditText
         android:id="@+id/correo"
         android:layout_width="match_parent"
@@ -35,31 +46,30 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/contrasena"
         android:layout_marginTop="23dp"
-        android:backgroundTint="@color/primary_dark"
-        android:text="Iniciar"
+        android:backgroundTint="@android:color/holo_red_dark"
         android:onClick="iniciarSesion"
+        android:text="Iniciar"
         android:textColor="@color/icons" />
 
     <TextView
         android:id="@+id/nuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/registrarse"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="29dp"
-        android:text="¿Si no tienes cuenta?" />
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="12dp"
+        android:text="¿Si no tienes cuenta?"
+        android:layout_below="@+id/facebook"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/Registrateahora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/nuevo"
-        android:layout_alignBottom="@+id/nuevo"
-        android:layout_marginStart="13dp"
-        android:layout_toEndOf="@+id/nuevo"
+        android:layout_marginStart="15dp"
         android:background="@color/icons"
         android:text="Registrate Ahora"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        android:layout_below="@+id/facebook"
+        android:layout_toEndOf="@+id/nuevo" />
 
 </RelativeLayout>
