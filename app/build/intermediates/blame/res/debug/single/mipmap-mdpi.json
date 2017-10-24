@@ -1,10 +1,18 @@
 [
     {
+        "merged": "C:\\Users\\Santiago\\Desktop\\APPLICACIONES\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Santiago\\Desktop\\APPLICACIONES\\LevisDance2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Santiago\\Desktop\\APPLICACIONES\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\Santiago\\Desktop\\APPLICACIONES\\LevisDance2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     }
 ]

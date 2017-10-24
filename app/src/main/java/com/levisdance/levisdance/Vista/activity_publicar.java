@@ -3,7 +3,9 @@ package com.levisdance.levisdance.Vista;
         import android.content.Intent;
         import android.icu.text.DateFormat;
         import android.icu.text.SimpleDateFormat;
+        import android.net.Uri;
         import android.os.Build;
+        import android.support.annotation.NonNull;
         import android.support.annotation.RequiresApi;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
@@ -12,11 +14,18 @@ package com.levisdance.levisdance.Vista;
         import android.widget.EditText;
         import android.widget.Toast;
 
+        import com.google.android.gms.tasks.OnFailureListener;
+        import com.google.android.gms.tasks.OnSuccessListener;
+        import com.google.firebase.database.DataSnapshot;
+        import com.google.firebase.storage.FirebaseStorage;
+        import com.google.firebase.storage.StorageReference;
+        import com.google.firebase.storage.UploadTask;
         import com.levisdance.levisdance.Control.LogicDataBase;
         import com.levisdance.levisdance.Modelo.*;
         import com.levisdance.levisdance.Modelo.Publicacion;
         import com.levisdance.levisdance.R;
 
+        import java.io.File;
         import java.util.Date;
 
 public class activity_publicar extends AppCompatActivity {
@@ -25,11 +34,13 @@ public class activity_publicar extends AppCompatActivity {
 
     private com.levisdance.levisdance.Modelo.Publicacion publicacion;
     private LogicDataBase dataBase;
+    private StorageReference mStorageRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_publicar);
+        mStorageRef = FirebaseStorage.getInstance().getReference();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -69,5 +80,27 @@ public class activity_publicar extends AppCompatActivity {
         }catch (Exception e){
             Log.i("Error", e.toString());
         }
+    }
+
+    public void UploadFile(){
+        Uri file = Uri.fromFile(new File("path/to/images/rivers.jpg"));
+
+        StorageReference riversRef = mStorageRef.child("images/rivers.jpg");
+
+        riversRef.putFile(file)
+                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        // Get a URL to the uploaded content
+                        //Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception exception) {
+                        // Handle unsuccessful uploads
+                        // ...
+                    }
+                });
     }
 }

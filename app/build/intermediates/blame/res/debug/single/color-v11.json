@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\Santiago\\Desktop\\APPLICACIONES\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\Santiago\\.android\\build-cache\\bd29eacbe06e187ba470264fa2716ea1bef2d1c5\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Santiago\\Desktop\\APPLICACIONES\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\Santiago\\.android\\build-cache\\bd29eacbe06e187ba470264fa2716ea1bef2d1c5\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
         "source": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },

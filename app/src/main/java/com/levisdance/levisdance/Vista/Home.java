@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.net.Uri;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.bumptech.glide.Glide;
+import com.firebase.ui.storage.images.FirebaseImageLoader;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.levisdance.levisdance.Control.LogicDataBase;
 import com.levisdance.levisdance.R;
 
@@ -36,12 +41,15 @@ public class Home extends AppCompatActivity {
     Adaptador adapter;
     ArrayList<Publicacion> imageList;
     private static int RESULT_LOAD_IMAGE = 1;
+    private StorageReference mStorageRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         dataBase=new LogicDataBase(this);
+        mStorageRef = FirebaseStorage.getInstance().getReference();
+        downloadFile();
 
         Intent intent=new Intent();
         String usuario=intent.getStringExtra(EXTRA_MESSAGE);
@@ -142,6 +150,22 @@ public class Home extends AppCompatActivity {
         Intent intent=new Intent(this, CambioContrasena.class);
         intent.putExtra(EXTRA_MESSAGE, usuario.getCorreo());
         startActivity(intent);
+
+    }
+
+    public void downloadFile(){
+        // Reference to an image file in Firebase Storage
+        StorageReference storageReference = mStorageRef ;
+
+// ImageView in your Activity
+        ImageView imageView = (ImageView) findViewById(R.id.imageViewdelItem);
+
+// Load the image using Glide
+        Glide.with(this /* context */)
+                .using(new FirebaseImageLoader())
+                .load(storageReference)
+                .into(imageView);
+
 
     }
 }
