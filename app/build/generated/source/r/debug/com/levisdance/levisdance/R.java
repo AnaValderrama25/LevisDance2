@@ -3296,8 +3296,8 @@ containing a value of this type.
         public static final int ifRoom=0x7f0d0045;
         public static final int image=0x7f0d0054;
         public static final int imageButton4=0x7f0d00a1;
-        public static final int imageView=0x7f0d00b1;
         public static final int imageView2=0x7f0d0096;
+        public static final int imageViewdelItem=0x7f0d00b1;
         public static final int info=0x7f0d00c1;
         public static final int iniciasesion=0x7f0d009d;
         public static final int iraHome=0x7f0d0086;

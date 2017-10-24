@@ -21,6 +21,11 @@ import com.bumptech.glide.Glide;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -48,18 +53,17 @@ public class Home extends AppCompatActivity {
     ArrayList<Publicacion> imageList;
     private static int RESULT_LOAD_IMAGE = 1;
     private StorageReference mStorageRef;
+    private DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         dataBase=new LogicDataBase(this);
-        mStorageRef = FirebaseStorage.getInstance().getReference();
-        try {
-            downloadFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        mStorageRef = FirebaseStorage.getInstance().getReference().child("Publicaciones");
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        myRef = database.getReference();
+
 
         Intent intent=new Intent();
         String usuario=intent.getStringExtra(EXTRA_MESSAGE);
@@ -163,24 +167,29 @@ public class Home extends AppCompatActivity {
 
     }
 
-    public void downloadFile() throws IOException {
 
 
-        File localFile = File.createTempFile("images", "jpg");
-        mStorageRef.getFile(localFile)
-                .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                        // Successfully downloaded data to local file
-                        // ...
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
+    public void realtime(){
+        myRef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onFailure(@NonNull Exception exception) {
-                // Handle failed download
-                // ...
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                ArrayList<com.levisdance.levisdance.Vista.Publicacion> value = dataSnapshot.getValue(ArrayList.class);
+                //Log.d(TAG, "Value is: " + value);
+                imageList = (ArrayList<Publicacion>) value;
+
+
+                //Find list view and bind it with the custom adapter
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                //Log.w(TAG, "Failed to read value.", error.toException());
             }
         });
+
     }
 
 }

@@ -29,7 +29,7 @@ public class activity_publicar extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.levisdance.levisdance.MESSAGE";
 
     private com.levisdance.levisdance.Modelo.Publicacion publicacion;
-    private LogicDataBase dataBase;
+   // private LogicDataBase dataBase;
     private StorageReference mStorageRef;
 
     @Override
