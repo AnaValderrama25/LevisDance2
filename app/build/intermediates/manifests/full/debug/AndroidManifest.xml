@@ -35,18 +35,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.levisdance.levisdance.Login" >
+        <activity android:name="com.levisdance.levisdance.Vista.Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.levisdance.levisdance.Registro" />
-        <activity android:name="com.levisdance.levisdance.Home" />
-        <activity android:name="com.levisdance.levisdance.Usuario" />
-        <activity android:name="com.levisdance.levisdance.CambioContrasena" />
-        <activity android:name="com.levisdance.levisdance.activity_publicar" />
+        <activity android:name="com.levisdance.levisdance.Vista.Registro" />
+        <activity android:name="com.levisdance.levisdance.Vista.Home" />
+        <activity android:name="com.levisdance.levisdance.Vista.Usuario" />
+        <activity android:name="com.levisdance.levisdance.Vista.CambioContrasena" />
+        <activity android:name="com.levisdance.levisdance.Vista.activity_publicar" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

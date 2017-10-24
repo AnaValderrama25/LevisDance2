@@ -71,10 +71,10 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\User\.android\b
 		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:13:9-43
 	android:theme
 		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:17:9-40
-activity#com.levisdance.levisdance.Login
+activity#com.levisdance.levisdance.Vista.Login
 ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:18:19-40
+		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:18:19-46
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
@@ -85,26 +85,26 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
 		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:22:27-74
-activity#com.levisdance.levisdance.Registro
-ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:25:9-46
+activity#com.levisdance.levisdance.Vista.Registro
+ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:25:9-52
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:25:19-43
-activity#com.levisdance.levisdance.Home
-ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:26:9-42
+		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:25:19-49
+activity#com.levisdance.levisdance.Vista.Home
+ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:26:9-48
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:26:19-39
-activity#com.levisdance.levisdance.Usuario
-ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:27:9-45
+		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:26:19-45
+activity#com.levisdance.levisdance.Vista.Usuario
+ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:27:9-51
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:27:19-42
-activity#com.levisdance.levisdance.CambioContrasena
-ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:28:9-54
+		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:27:19-48
+activity#com.levisdance.levisdance.Vista.CambioContrasena
+ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:28:9-60
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:28:19-51
-activity#com.levisdance.levisdance.activity_publicar
-ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:29:9-64
+		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:28:19-57
+activity#com.levisdance.levisdance.Vista.activity_publicar
+ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:29:9-70
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:29:19-52
+		ADDED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml:29:19-58
 uses-sdk
 INJECTED from C:\Users\User\AndroidStudioProjects\LevisDance2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.android\build-cache\86e46c6088d0e57fabc4c324df06f52f07679e6e\output\AndroidManifest.xml:5:5-7:41
@@ -116,6 +116,8 @@ MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\User\.android\
 MERGED from [com.android.support:transition:25.3.1] C:\Users\User\.android\build-cache\af3bf8004187dd6ef5cdc7716b9d03e8056dafe1\output\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\User\.android\build-cache\98e024ed0bbf9360716a35a2976fcdd1bcaa7824\output\AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\User\.android\build-cache\e6d3cbfa1cd8ea9584f2842a201207611a2be769\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\User\.android\build-cache\e9c7b8ebab462aca6aa7d32f2912120edd4df3c7\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\User\.android\build-cache\a44e945427d0d1e8ae38fd91f5b562dbca897224\output\AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\User\.android\build-cache\c3c83c7e85f827f15eefa8e78d862d2d3ca125d2\output\AndroidManifest.xml:4:5-42
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\User\.android\build-cache\c4da21833ffb8770da94d4d83791ac5d5332b0cb\output\AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\User\.android\build-cache\bc34baf77fb53c74ae935ee4d3e393fd26f5edee\output\AndroidManifest.xml:17:5-42
