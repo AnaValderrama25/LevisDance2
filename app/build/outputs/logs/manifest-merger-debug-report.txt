@@ -43,10 +43,15 @@ MERGED from [com.android.support:design:25.3.1] C:\Users\Santiago\.android\build
 MERGED from [com.android.support:transition:25.3.1] C:\Users\Santiago\.android\build-cache\28ab95ac3285d71cbe72e676a8977f2eb0d59173\output\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\Santiago\.android\build-cache\4e439a6cd12e0112edbfc317dc6f7b717cd76fd4\output\AndroidManifest.xml:19:5-20:19
 MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Santiago\.android\build-cache\cddb3780172ac1f4a9f623d842405b037350ded5\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.android.support:palette-v7:23.4.0] C:\Users\Santiago\.android\build-cache\82102b9ade27b45e494c0df28f5de7b2b3fa083a\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.android:facebook-login:4.27.0] C:\Users\Santiago\.android\build-cache\21f6433c6ec14e7cee399a38f88e722d2133253d\output\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.27.0] C:\Users\Santiago\.android\build-cache\330a68f53c391869d42a8c374589e86ba9165516\output\AndroidManifest.xml:28:5-34:19
+MERGED from [com.facebook.android:facebook-core:4.27.0] C:\Users\Santiago\.android\build-cache\5b8de4003bddd959381020858d0ad4833983c792\output\AndroidManifest.xml:28:5-43:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Santiago\.android\build-cache\bd29eacbe06e187ba470264fa2716ea1bef2d1c5\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Santiago\.android\build-cache\26077aec56963acfb359d7d6c2ee2285a3bddec7\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Santiago\.android\build-cache\932a74b2efe80b1b7e86f0715cf0f341702fbe46\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:palette-v7:23.4.0] C:\Users\Santiago\.android\build-cache\82102b9ade27b45e494c0df28f5de7b2b3fa083a\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Santiago\.android\build-cache\5dfb518bf877be3f74ae1a0fc1cdd6fe87f56fbe\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\Santiago\.android\build-cache\ff48c467c739a3cd5c6846ffcde1853ffc4ea335\output\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\Santiago\.android\build-cache\43742e3f3e1942319c2340684e352618db75f3aa\output\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Santiago\.android\build-cache\fcf436f7aa5b247de41b87a951b70ff153594ec8\output\AndroidManifest.xml:24:5-33:19
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Santiago\.android\build-cache\9e948ba4b11b5010cf309d04e1120ed915d1725a\output\AndroidManifest.xml:24:5-28:19
@@ -117,12 +122,17 @@ MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Santiago
 MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\Santiago\.android\build-cache\dee721264c1fa4ed22005aed6178810412bb1050\output\AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\Santiago\.android\build-cache\e65dd8d79ae38a0162f8817cb77e35c2df4603c5\output\AndroidManifest.xml:3:5-42
 MERGED from [com.firebaseui:firebase-ui-storage:0.6.0] C:\Users\Santiago\.android\build-cache\32d9077465e93d57915ccfc7c2ff7ce87772e6c5\output\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Santiago\.android\build-cache\bd29eacbe06e187ba470264fa2716ea1bef2d1c5\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Santiago\.android\build-cache\26077aec56963acfb359d7d6c2ee2285a3bddec7\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Santiago\.android\build-cache\932a74b2efe80b1b7e86f0715cf0f341702fbe46\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:palette-v7:23.4.0] C:\Users\Santiago\.android\build-cache\82102b9ade27b45e494c0df28f5de7b2b3fa083a\output\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-storage:10.0.1] C:\Users\Santiago\.android\build-cache\66393ad7413740ca6ed941e135b7c8f26b5d3206\output\AndroidManifest.xml:3:5-42
 MERGED from [com.google.firebase:firebase-storage-common:10.0.1] C:\Users\Santiago\.android\build-cache\5e0aeca76628c9cbf803ef75929138c254f10be3\output\AndroidManifest.xml:3:5-42
+MERGED from [com.facebook.android:facebook-login:4.27.0] C:\Users\Santiago\.android\build-cache\21f6433c6ec14e7cee399a38f88e722d2133253d\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.27.0] C:\Users\Santiago\.android\build-cache\330a68f53c391869d42a8c374589e86ba9165516\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.27.0] C:\Users\Santiago\.android\build-cache\5b8de4003bddd959381020858d0ad4833983c792\output\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Santiago\.android\build-cache\bd29eacbe06e187ba470264fa2716ea1bef2d1c5\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Santiago\.android\build-cache\26077aec56963acfb359d7d6c2ee2285a3bddec7\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Santiago\.android\build-cache\932a74b2efe80b1b7e86f0715cf0f341702fbe46\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Santiago\.android\build-cache\5dfb518bf877be3f74ae1a0fc1cdd6fe87f56fbe\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\Santiago\.android\build-cache\ff48c467c739a3cd5c6846ffcde1853ffc4ea335\output\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\Santiago\.android\build-cache\43742e3f3e1942319c2340684e352618db75f3aa\output\AndroidManifest.xml:4:5-42
 MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Santiago\.android\build-cache\fcf436f7aa5b247de41b87a951b70ff153594ec8\output\AndroidManifest.xml:17:5-42
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Santiago\.android\build-cache\9e948ba4b11b5010cf309d04e1120ed915d1725a\output\AndroidManifest.xml:17:5-42
@@ -151,6 +161,8 @@ MERGED from [com.android.support:transition:25.3.1] C:\Users\Santiago\.android\b
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Santiago\.android\build-cache\bd29eacbe06e187ba470264fa2716ea1bef2d1c5\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Santiago\.android\build-cache\26077aec56963acfb359d7d6c2ee2285a3bddec7\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Santiago\.android\build-cache\932a74b2efe80b1b7e86f0715cf0f341702fbe46\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Santiago\.android\build-cache\5dfb518bf877be3f74ae1a0fc1cdd6fe87f56fbe\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:customtabs:25.3.1] C:\Users\Santiago\.android\build-cache\ff48c467c739a3cd5c6846ffcde1853ffc4ea335\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Santiago\.android\build-cache\58d56699587367976560eb41486ab984ca3c3008\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Santiago\.android\build-cache\f19d5331fd95658bfe3c2432d0d24e69f40613ac\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Santiago\.android\build-cache\bdd17174beb068e1cf342a656b7aa9fcc987cd45\output\AndroidManifest.xml:25:5-27:34
@@ -169,6 +181,26 @@ ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Santiago\
 		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Santiago\.android\build-cache\cddb3780172ac1f4a9f623d842405b037350ded5\output\AndroidManifest.xml:19:86-145
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\Santiago\.android\build-cache\cddb3780172ac1f4a9f623d842405b037350ded5\output\AndroidManifest.xml:19:19-85
+activity#com.facebook.FacebookActivity
+ADDED from [com.facebook.android:facebook-common:4.27.0] C:\Users\Santiago\.android\build-cache\330a68f53c391869d42a8c374589e86ba9165516\output\AndroidManifest.xml:29:9-32:66
+	android:configChanges
+		ADDED from [com.facebook.android:facebook-common:4.27.0] C:\Users\Santiago\.android\build-cache\330a68f53c391869d42a8c374589e86ba9165516\output\AndroidManifest.xml:31:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:4.27.0] C:\Users\Santiago\.android\build-cache\330a68f53c391869d42a8c374589e86ba9165516\output\AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.27.0] C:\Users\Santiago\.android\build-cache\330a68f53c391869d42a8c374589e86ba9165516\output\AndroidManifest.xml:30:13-57
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:4.27.0] C:\Users\Santiago\.android\build-cache\330a68f53c391869d42a8c374589e86ba9165516\output\AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.27.0] C:\Users\Santiago\.android\build-cache\330a68f53c391869d42a8c374589e86ba9165516\output\AndroidManifest.xml:33:19-68
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:4.27.0] C:\Users\Santiago\.android\build-cache\5b8de4003bddd959381020858d0ad4833983c792\output\AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:4.27.0] C:\Users\Santiago\.android\build-cache\5b8de4003bddd959381020858d0ad4833983c792\output\AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.27.0] C:\Users\Santiago\.android\build-cache\5b8de4003bddd959381020858d0ad4833983c792\output\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.27.0] C:\Users\Santiago\.android\build-cache\5b8de4003bddd959381020858d0ad4833983c792\output\AndroidManifest.xml:40:13-70
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Santiago\.android\build-cache\fcf436f7aa5b247de41b87a951b70ff153594ec8\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Santiago\.android\build-cache\9e948ba4b11b5010cf309d04e1120ed915d1725a\output\AndroidManifest.xml:21:5-78

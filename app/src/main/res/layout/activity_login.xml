@@ -7,7 +7,7 @@
     android:background="@android:color/background_light"
     tools:context="com.levisdance.levisdance.Vista.Login">
 
-    <com.facebook.login.widget.LoginButton
+    <Button
         android:id="@+id/facebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

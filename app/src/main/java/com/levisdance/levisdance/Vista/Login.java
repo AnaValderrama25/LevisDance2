@@ -37,7 +37,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Button btn = (Button) findViewById(R.id.Registrateahora);
         //dataBase=new LogicDataBase(this);
-        btn.setOnClickListener(new View.OnClickListener() {
+       btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),Registro.class);
