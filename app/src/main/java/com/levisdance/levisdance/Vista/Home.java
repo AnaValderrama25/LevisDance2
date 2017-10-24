@@ -29,6 +29,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.levisdance.levisdance.Control.LogicDataBase;
 import com.levisdance.levisdance.R;
 
@@ -128,6 +129,26 @@ realtime();
     public void openCamera(View view) {
         Intent i = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
         startActivity(i);
+       Uri select = i.getData();
+        Uri file = select;
+
+        StorageReference imagen = mStorageRef.child("images");
+
+        imagen.putFile(file)
+                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        // Get a URL to the uploaded content
+                        //Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception exception) {
+                        // Handle unsuccessful uploads
+                        // ...
+                    }
+                });
     }
 
     public void agregarFoto(View view){
@@ -135,6 +156,27 @@ realtime();
             Intent intent = new Intent(Intent.ACTION_PICK);
             intent.setType("image/*");
             startActivityForResult(intent, RESULT_LOAD_IMAGE);
+            Intent outputIntent = intent;
+            Uri selectedUri = outputIntent.getData();
+            Uri file = selectedUri;
+
+            StorageReference imagen = mStorageRef.child("images");
+
+            imagen.putFile(file)
+                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            // Get a URL to the uploaded content
+                            //Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception exception) {
+                            // Handle unsuccessful uploads
+                            // ...
+                        }
+                    });
         }catch (Exception e){
             Log.i("Error", e.toString());
         }
