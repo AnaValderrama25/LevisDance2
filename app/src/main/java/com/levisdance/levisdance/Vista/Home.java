@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,12 +19,17 @@ import android.widget.ListView;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.storage.images.FirebaseImageLoader;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.levisdance.levisdance.Control.LogicDataBase;
 import com.levisdance.levisdance.R;
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +55,11 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         dataBase=new LogicDataBase(this);
         mStorageRef = FirebaseStorage.getInstance().getReference();
-        downloadFile();
+        try {
+            downloadFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         Intent intent=new Intent();
         String usuario=intent.getStringExtra(EXTRA_MESSAGE);
@@ -153,19 +163,24 @@ public class Home extends AppCompatActivity {
 
     }
 
-    public void downloadFile(){
-        // Reference to an image file in Firebase Storage
-        StorageReference storageReference = mStorageRef ;
-
-// ImageView in your Activity
-        ImageView imageView = (ImageView) findViewById(R.id.imageViewdelItem);
-
-// Load the image using Glide
-        Glide.with(this /* context */)
-                .using(new FirebaseImageLoader())
-                .load(storageReference)
-                .into(imageView);
+    public void downloadFile() throws IOException {
 
 
+        File localFile = File.createTempFile("images", "jpg");
+        mStorageRef.getFile(localFile)
+                .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                        // Successfully downloaded data to local file
+                        // ...
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                // Handle failed download
+                // ...
+            }
+        });
     }
+
 }
