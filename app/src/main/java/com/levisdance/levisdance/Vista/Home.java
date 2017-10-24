@@ -103,7 +103,7 @@ public class Home extends AppCompatActivity {
         imageList = new ArrayList<Publicacion>();
 
         //ejemplo de creación de objeto
-
+realtime();
         Publicacion temp1 = new Publicacion(ContextCompat.getDrawable(getApplicationContext(), R.drawable.fotodo), 1, "Edward Figueroa", "Cali - Valle del cauca", "#THISISMYTITLE", "subido hace 8 min");
         Publicacion temp2 = new Publicacion(ContextCompat.getDrawable(getApplicationContext(), R.drawable.fotouno), 1, "Edward Figueroa", "Cali - Valle del cauca", "#THISISMYTITLE", "subido hace 8 min");
 
@@ -178,6 +178,7 @@ public class Home extends AppCompatActivity {
                 ArrayList<com.levisdance.levisdance.Vista.Publicacion> value = dataSnapshot.getValue(ArrayList.class);
                 //Log.d(TAG, "Value is: " + value);
                 imageList = (ArrayList<Publicacion>) value;
+
 
 
                 //Find list view and bind it with the custom adapter

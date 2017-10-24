@@ -33,6 +33,8 @@ public class Adaptador extends ArrayAdapter<Publicacion> {
 
     }
 
+
+
     public View getView(int position, View convertView, ViewGroup parent){
 
         //get the image we are displaying
