@@ -26,6 +26,7 @@ package com.levisdance.levisdance.Vista;
         import com.levisdance.levisdance.R;
 
         import java.io.File;
+        import java.net.DatagramPacket;
         import java.util.Date;
 
 public class activity_publicar extends AppCompatActivity {
@@ -77,15 +78,18 @@ public class activity_publicar extends AppCompatActivity {
             Intent intent = new Intent(Intent.ACTION_PICK);
             intent.setType("image/*");
             startActivity(intent);
+            Intent outputIntent = intent;
+            Uri selectedUri = outputIntent.getData();
+            UploadFile(selectedUri);
         }catch (Exception e){
             Log.i("Error", e.toString());
         }
     }
 
-    public void UploadFile(){
-        Uri file = Uri.fromFile(new File("path/to/images/rivers.jpg"));
+    public void UploadFile(Uri uriimage){
+        Uri file = uriimage;
 
-        StorageReference riversRef = mStorageRef.child("images/rivers.jpg");
+        StorageReference riversRef = mStorageRef.child("images");
 
         riversRef.putFile(file)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
