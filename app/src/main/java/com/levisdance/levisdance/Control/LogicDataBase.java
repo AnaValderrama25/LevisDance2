@@ -44,8 +44,6 @@ public class LogicDataBase extends SQLiteOpenHelper {
         if(db !=null){
             ContentValues valores=new ContentValues();
             valores.put(DataBase.DatosColumnasUsuario.USUARIO_NOMBRE,usuario.getNombre());
-            valores.put(DataBase.DatosColumnasUsuario.USUARIO_APELLIDO,usuario.getApellido());
-            valores.put(DataBase.DatosColumnasUsuario.USUARIO_CONTRASENA,usuario.getContrasena());
             valores.put(DataBase.DatosColumnasUsuario.USUARIO_CORREO,usuario.getCorreo());
             valores.put(DataBase.DatosColumnasUsuario.USUARIO_FOTO_PERFIL, usuario.getFotoPerfil());
             db.insert(DataBase.TABLA_USUARIOS, null, valores);
@@ -57,8 +55,6 @@ public class LogicDataBase extends SQLiteOpenHelper {
         SQLiteDatabase db=getWritableDatabase();
         ContentValues valores=new ContentValues();
         valores.put(DataBase.DatosColumnasUsuario.USUARIO_NOMBRE,usuario.getNombre());
-        valores.put(DataBase.DatosColumnasUsuario.USUARIO_APELLIDO,usuario.getApellido());
-        valores.put(DataBase.DatosColumnasUsuario.USUARIO_CONTRASENA,usuario.getContrasena());
         valores.put(DataBase.DatosColumnasUsuario.USUARIO_CORREO,usuario.getCorreo());
         valores.put(DataBase.DatosColumnasUsuario.USUARIO_FOTO_PERFIL, usuario.getFotoPerfil());
         db.update(DataBase.TABLA_USUARIOS, valores, DataBase.DatosColumnasUsuario.USUARIO_CORREO+"="+usuario.getCorreo(),null);
@@ -85,8 +81,6 @@ public class LogicDataBase extends SQLiteOpenHelper {
             cursor.moveToFirst();
             Usuario usuarioRetornado=new Usuario(
                     cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasUsuario.USUARIO_NOMBRE)),
-                    cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasUsuario.USUARIO_APELLIDO)),
-                    cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasUsuario.USUARIO_CONTRASENA)),
                     cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasUsuario.USUARIO_CORREO)),
                     cursor.getString(cursor.getColumnIndex(DataBase.DatosColumnasUsuario.USUARIO_FOTO_PERFIL)));
             db.close();
