@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Santiago\\Desktop\\APPLICACIONES\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
+        "source": "C:\\Users\\Santiago\\.android\\build-cache\\d3208fb8eb462c7dce22c945e782bed4500bac3e\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
         "source": "C:\\Users\\User\\.android\\build-cache\\f7a498530319dc5dd5812b78df4486a1618cae06\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     }

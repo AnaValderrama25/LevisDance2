@@ -33,6 +33,8 @@ public class Adaptador extends ArrayAdapter<Publicacion> {
 
     }
 
+
+
     public View getView(int position, View convertView, ViewGroup parent){
 
         //get the image we are displaying
@@ -47,7 +49,7 @@ public class Adaptador extends ArrayAdapter<Publicacion> {
 
         //Conect Code with layout objects
 
-        ImageView imgLoad = (ImageView) view.findViewById(R.id.imageView);
+        ImageView imgLoad = (ImageView) view.findViewById(R.id.imageViewdelItem);
         TextView tittleLoad = (TextView) view.findViewById(R.id.item_name);
         TextView dateLoad = (TextView) view.findViewById(R.id.item_time);
         TextView ownerLoad = (TextView) view.findViewById(R.id.item_user_name);

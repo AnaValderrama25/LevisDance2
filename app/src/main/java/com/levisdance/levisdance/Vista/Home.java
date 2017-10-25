@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,10 +17,25 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.bumptech.glide.Glide;
+import com.firebase.ui.storage.images.FirebaseImageLoader;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.levisdance.levisdance.Control.LogicDataBase;
 import com.levisdance.levisdance.R;
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,12 +53,18 @@ public class Home extends AppCompatActivity {
     Adaptador adapter;
     ArrayList<Publicacion> imageList;
     private static int RESULT_LOAD_IMAGE = 1;
+    private StorageReference mStorageRef;
+    private DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         dataBase=new LogicDataBase(this);
+        mStorageRef = FirebaseStorage.getInstance().getReference().child("images");
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        myRef = database.getReference();
+
 
         Intent intent=new Intent();
         String usuario=intent.getStringExtra(EXTRA_MESSAGE);
@@ -81,7 +104,7 @@ public class Home extends AppCompatActivity {
         imageList = new ArrayList<Publicacion>();
 
         //ejemplo de creación de objeto
-
+realtime();
         Publicacion temp1 = new Publicacion(ContextCompat.getDrawable(getApplicationContext(), R.drawable.fotodo), 1, "Edward Figueroa", "Cali - Valle del cauca", "#THISISMYTITLE", "subido hace 8 min");
         Publicacion temp2 = new Publicacion(ContextCompat.getDrawable(getApplicationContext(), R.drawable.fotouno), 1, "Edward Figueroa", "Cali - Valle del cauca", "#THISISMYTITLE", "subido hace 8 min");
 
@@ -106,6 +129,28 @@ public class Home extends AppCompatActivity {
     public void openCamera(View view) {
         Intent i = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
         startActivity(i);
+        Uri select = i.getData();
+        while(select!=null){
+       select = i.getData();
+        Uri file = select;
+
+        StorageReference imagen = mStorageRef.child("images");
+
+        imagen.putFile(file)
+                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        // Get a URL to the uploaded content
+                        //Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception exception) {
+                        // Handle unsuccessful uploads
+                        // ...
+                    }
+                });}
     }
 
     public void agregarFoto(View view){
@@ -113,6 +158,31 @@ public class Home extends AppCompatActivity {
             Intent intent = new Intent(Intent.ACTION_PICK);
             intent.setType("image/*");
             startActivityForResult(intent, RESULT_LOAD_IMAGE);
+            Intent outputIntent = intent;
+            Uri selectedUri = outputIntent.getData();
+            Uri select = outputIntent.getData();
+            while(select!=null){
+                select = outputIntent.getData();
+                Uri file = select;
+
+                StorageReference imagen = mStorageRef.child("images");
+
+                imagen.putFile(file)
+                        .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                            @Override
+                            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                                // Get a URL to the uploaded content
+                                //Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception exception) {
+                                // Handle unsuccessful uploads
+                                // ...
+                                Log.d("Error", "Que vaina");
+                            }
+                        });}
         }catch (Exception e){
             Log.i("Error", e.toString());
         }
@@ -144,4 +214,31 @@ public class Home extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+
+
+    public void realtime(){
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                ArrayList<com.levisdance.levisdance.Vista.Publicacion> value = dataSnapshot.getValue(ArrayList.class);
+                //Log.d(TAG, "Value is: " + value);
+                imageList = (ArrayList<Publicacion>) value;
+
+
+
+                //Find list view and bind it with the custom adapter
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                //Log.w(TAG, "Failed to read value.", error.toException());
+            }
+        });
+
+    }
+
 }
