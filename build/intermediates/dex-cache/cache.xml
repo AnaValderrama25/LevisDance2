@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\e3aa41667786ea73048e1356ca98f29c67ed8f6a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\User\AndroidStudioProjects\LevisDance2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8efd33685f076f5e62fbebc23d49d44a45c6c1dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\AndroidStudioProjects\LevisDance2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\User\AndroidStudioProjects\LevisDance2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6f32a2d74ea6ee5b98731252dca1d6e0f4c526e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\c4da21833ffb8770da94d4d83791ac5d5332b0cb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="C:\Users\User\AndroidStudioProjects\LevisDance2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_00b14e75296b7a7884a4126ef8bcf3ba2e37b79d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\User\AndroidStudioProjects\LevisDance2\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_9f79a10fffeb20d68ec2556dfcbe26f5eb452e5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\AndroidStudioProjects\LevisDance2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="635622e29eee885135043317ad5ce0520f96eee3">
+        <dex dex="C:\Users\User\AndroidStudioProjects\LevisDance2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0fb331f194e5dc0a1b6fb3d64a75aa4eb43239ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.0\73c49077166faa4c3c0059c5f583d1d7bd1475fe\core-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="C:\Users\User\AndroidStudioProjects\LevisDance2\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.3.0_59e7345e23a354d9a108707a8daec7a410408eb8\classes.dex" />
+    </item>
+
+</items>

@@ -40,7 +40,7 @@ public class CambioContrasena extends AppCompatActivity {
             String usuario=intent.getStringExtra(EXTRA_MESSAGE);
             try {
                 com.levisdance.levisdance.Modelo.Usuario u=dataBase.buscarUsuario(usuario);
-                u.setContrasena(contra1.getText().toString());
+                //u.setContrasena(contra1.getText().toString());
                 dataBase.modificarUsuario(u);
             } catch (Exception e) {
                 e.printStackTrace();

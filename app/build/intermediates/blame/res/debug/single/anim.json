@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Santiago\\.android\\build-cache\\d3208fb8eb462c7dce22c945e782bed4500bac3e\\output\\res\\anim\\design_fab_in.xml"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
         "merged": "C:\\Users\\Santiago\\Desktop\\APPLICACIONES\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
         "source": "C:\\Users\\Santiago\\.android\\build-cache\\bd29eacbe06e187ba470264fa2716ea1bef2d1c5\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\8200db9558e8c3c1ab0a73a33fb5021951a0ef61\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\LevisDance2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",

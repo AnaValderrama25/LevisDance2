@@ -51,7 +51,8 @@
         android:text="Iniciar"
         android:textColor="@color/icons" />
 
-    <com.facebook.login.widget.LoginButton
+    <Button
+        android:text="iniciar sesión con facebook"
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
